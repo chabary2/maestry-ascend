@@ -5,11 +5,10 @@ export function Hero() {
   const { ref, isVisible } = useScrollFade();
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center radial-gradient-bottom overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, #8B250033 0%, transparent 70%)" }}>
       {/* Blur orbs */}
       <div className="blur-orb w-[500px] h-[500px] bg-primary/5 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4" />
       <div className="blur-orb w-[300px] h-[300px] bg-accent/5 bottom-20 right-10" />
-
       <div
         ref={ref}
         className={`container mx-auto px-6 text-center max-w-4xl relative z-10 pt-24 ${
