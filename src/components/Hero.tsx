@@ -26,8 +26,10 @@ export function Hero() {
           escalabilidade, previsibilidade de receita e eficiência operacional.
         </p>
 
-        <button
-          onClick={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
+        <a
+          href="https://tally.so/r/68k4do"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-heading font-bold text-base px-8 py-4 rounded-xl hover:brightness-110 hover:scale-[1.02] transition-all duration-300 interactive"
         >
           Comece agora
