@@ -65,9 +65,6 @@ export function Diferenciais() {
           ))}
         </div>
 
-        <div className={`text-center mt-12 scroll-fade ${isVisible ? "visible" : ""}`} style={{ transitionDelay: "0.4s" }}>
-          <span className="pill-badge">Crescer não é sorte. É estrutura.</span>
-        </div>
       </div>
     </section>
   );

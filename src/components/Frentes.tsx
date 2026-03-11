@@ -73,9 +73,6 @@ export function Frentes() {
           ))}
         </div>
 
-        <div className={`text-center mt-12 scroll-fade ${isVisible ? "visible" : ""}`} style={{ transitionDelay: "0.4s" }}>
-          <span className="pill-badge">Cada frente é desenhada para trabalhar em conjunto.</span>
-        </div>
       </div>
     </section>
   );

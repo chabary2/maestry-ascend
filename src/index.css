@@ -136,6 +136,18 @@
   background: linear-gradient(135deg, hsl(var(--gold) / 0.4) 0%, hsl(var(--gold) / 0.1) 50%, hsl(var(--gold) / 0.4) 100%);
 }
 
+/* Card neon glow */
+.card-neon {
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px -3px hsl(var(--orange) / 0.15), 0 0 30px -5px hsl(var(--orange) / 0.08);
+}
+
+.card-neon:hover {
+  box-shadow: 0 0 25px -3px hsl(var(--orange) / 0.3), 0 0 50px -5px hsl(var(--orange) / 0.15), inset 0 0 20px -10px hsl(var(--orange) / 0.05);
+  border-color: hsl(var(--orange) / 0.3);
+}
+
 /* Gaussian blur decorative */
 .blur-orb {
   position: absolute;
