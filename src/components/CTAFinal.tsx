@@ -18,7 +18,7 @@ export function CTAFinal() {
         </h2>
 
         <a
-          href="https://maestrysolucoes.online"
+          href="https://tally.so/r/68k4do"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-heading font-bold text-base px-8 py-4 rounded-xl hover:brightness-110 hover:scale-[1.02] transition-all duration-300 interactive mb-12"
