@@ -70,12 +70,14 @@ export function Navbar() {
             </MagneticButton>
           ))}
         </div>
-        <MagneticButton
-          onClick={() => scrollTo("cta")}
+        <a
+          href="https://tally.so/r/68k4do"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-primary text-primary-foreground font-heading font-semibold text-sm px-5 py-2 rounded-full hover:brightness-110 transition-all duration-300"
         >
           Preencha o formulário
-        </MagneticButton>
+        </a>
       </nav>
     </div>
   );
