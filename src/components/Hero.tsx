@@ -34,7 +34,7 @@ export function Hero() {
         >
           Comece agora
           <ArrowRight className="w-5 h-5" />
-        </button>
+        </a>
       </div>
     </section>
   );
