@@ -5,7 +5,7 @@ export function Hero() {
   const { ref, isVisible } = useScrollFade();
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center radial-gradient-bottom overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, #8B250033 0%, transparent 70%)" }}>
       {/* Blur orbs */}
       <div className="blur-orb w-[500px] h-[500px] bg-primary/5 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4" />
       <div className="blur-orb w-[300px] h-[300px] bg-accent/5 bottom-20 right-10" />
@@ -16,8 +16,6 @@ export function Hero() {
           isVisible ? "animate-fade-up" : "opacity-0"
         }`}
       >
-        <span className="pill-badge mb-8 inline-block">Coprodução Estratégica para Experts</span>
-
         <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 glow-orange">
           Estruturamos infoprodutores com operações de{" "}
           <span className="text-primary">alta performance</span>

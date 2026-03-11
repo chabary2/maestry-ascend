@@ -54,7 +54,7 @@ export function Diferenciais() {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="card-glow bg-card rounded-2xl p-8 border border-border/50 interactive"
+              className="card-neon bg-card rounded-2xl p-8 border border-border/50 interactive"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
                 {card.icon}
@@ -65,9 +65,6 @@ export function Diferenciais() {
           ))}
         </div>
 
-        <div className={`text-center mt-12 scroll-fade ${isVisible ? "visible" : ""}`} style={{ transitionDelay: "0.4s" }}>
-          <span className="pill-badge">Crescer não é sorte. É estrutura.</span>
-        </div>
       </div>
     </section>
   );

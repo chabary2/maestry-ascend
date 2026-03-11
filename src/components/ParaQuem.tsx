@@ -1,17 +1,17 @@
 import { useScrollFade } from "@/hooks/use-scroll-fade";
 
 const paraQuem = [
-  "Já tem um produto digital validado e audiência",
+  "Tem conhecimento e quer transformar em um negócio digital estruturado",
   "Quer escalar com estrutura, não com sorte",
   "Busca previsibilidade de receita",
-  "Quer um parceiro estratégico, não um prestador de serviço",
+  "Quer construir com quem entra junto na operação",
   "Está pronto para investir em crescimento profissional",
 ];
 
 const naoParaQuem = [
-  "Ainda não tem um produto ou audiência definidos",
+  "Quer crescer sem comprometimento com o processo",
   "Busca resultados da noite para o dia",
-  "Não está disposto a investir em estrutura",
+  "Espera resultado sem construção de base sólida",
   "Prefere trabalhar sozinho sem processos",
   "Não valoriza dados e métricas na tomada de decisão",
 ];
