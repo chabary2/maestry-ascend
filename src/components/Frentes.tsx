@@ -62,7 +62,7 @@ export function Frentes() {
           {frentes.map((f) => (
             <div
               key={f.title}
-              className="card-glow bg-card rounded-2xl p-8 border border-border/50 interactive"
+              className="card-neon bg-card rounded-2xl p-8 border border-border/50 interactive"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
                 {f.icon}
