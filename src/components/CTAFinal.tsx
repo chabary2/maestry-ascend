@@ -24,10 +24,16 @@ export function CTAFinal() {
           href="https://tally.so/r/68k4do"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-heading font-bold text-base px-8 py-4 rounded-xl hover:brightness-110 hover:scale-[1.02] transition-all duration-300 interactive"
+          className="group relative inline-flex items-center gap-3 font-heading font-bold text-base px-9 py-4 rounded-xl transition-all duration-300 interactive overflow-hidden"
+          style={{
+            background: "linear-gradient(135deg, hsl(34 91% 50%) 0%, hsl(22 85% 38%) 100%)",
+            color: "hsl(var(--primary-foreground))",
+            boxShadow: "0 0 0 1px hsl(38 90% 60% / 0.4) inset, 0 10px 30px -10px hsl(34 91% 47% / 0.6), 0 0 60px -20px hsl(22 85% 45% / 0.5)",
+          }}
         >
-          Fale com a gente
-          <ArrowRight className="w-5 h-5" />
+          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+          <span className="relative">Fale com a gente</span>
+          <ArrowRight className="w-5 h-5 relative transition-transform duration-300 group-hover:translate-x-1" />
         </a>
       </div>
     </section>
