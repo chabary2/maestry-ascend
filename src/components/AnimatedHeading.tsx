@@ -34,7 +34,7 @@ export function AnimatedHeading({ lines, className = "", as: Tag = "h2", delayBa
     <div ref={ref}>
       <Tag className={className}>
         {lines.map((line, li) => (
-          <span key={li} className="block overflow-hidden">
+          <span key={li} className="block overflow-hidden pb-[0.15em]">
             <span className="inline-block">
               {typeof line === "string"
                 ? line.split(" ").map((word, wi) => {
