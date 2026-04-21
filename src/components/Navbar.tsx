@@ -76,7 +76,7 @@ export function Navbar() {
           rel="noopener noreferrer"
           className="bg-primary text-primary-foreground font-heading font-semibold text-sm px-5 py-2 rounded-full hover:brightness-110 transition-all duration-300"
         >
-          Preencha o formulário
+          Fale com a gente
         </a>
       </nav>
     </div>

@@ -1,26 +1,23 @@
 import { useState } from "react";
 import { useScrollFade } from "@/hooks/use-scroll-fade";
+import { AnimatedHeading } from "@/components/AnimatedHeading";
 
 const faqs = [
   {
     q: "O que é coprodução?",
-    a: "Coprodução é um modelo de parceria onde estruturamos toda a operação do seu produto digital — estratégia, funis, equipe, tecnologia e gestão — em troca de uma participação nos resultados. Você foca na expertise, nós cuidamos do resto.",
+    a: "Coprodução é entrar na operação junto com o especialista. Estruturamos produto, comercial e conteúdo, dividimos a execução e compartilhamos o resultado. Não é prestação de serviço pontual, é operar lado a lado.",
   },
   {
-    q: "Para quem é a Maestry?",
-    a: "Para experts e infoprodutores que já possuem um produto validado e audiência, mas precisam de estrutura profissional para escalar com previsibilidade e eficiência.",
+    q: "Preciso já ter um produto ou mentoria criada?",
+    a: "Não. A Maestry entra antes do produto existir, se for o caso. Avaliamos o seu conhecimento e a sua audiência, e desenhamos o produto que faz sentido construir. Se você já tem, partimos do que existe e ajustamos o que precisa.",
   },
   {
-    q: "Como funciona o modelo financeiro?",
-    a: "Trabalhamos com um modelo de revenue share. Investimos na estrutura e operação do seu negócio e compartilhamos os resultados. Sem custos fixos mensais — nosso sucesso depende do seu.",
+    q: "Como a Maestry entra na minha operação?",
+    a: "Em três fases: diagnóstico do seu cenário atual, estruturação do plano (produto, funil e comercial) e implementação junto com você. Não entregamos um relatório e sumimos — operamos junto.",
   },
   {
-    q: "O que a Maestry opera na prática?",
-    a: "Operamos lançamentos, funis de aquisição, produção de conteúdo, automações, gestão de equipe, análise de dados, estratégia comercial e modelos de recorrência.",
-  },
-  {
-    q: "Qual o prazo para ver resultado?",
-    a: "Os primeiros resultados estruturais aparecem em 30-60 dias. Resultados de receita significativos costumam surgir entre 90-120 dias, dependendo do ponto de partida do projeto.",
+    q: "Como é o primeiro contato?",
+    a: "Você preenche um formulário curto. Se houver fit com o nosso modelo de operação, marcamos uma conversa para entender o seu momento em mais profundidade.",
   },
 ];
 
@@ -29,15 +26,20 @@ export function FAQ() {
   const { ref, isVisible } = useScrollFade();
 
   return (
-    <section className="relative py-24 md:py-32 radial-gradient-center">
+    <section className="relative py-28 md:py-40 radial-gradient-center overflow-hidden">
       <div className="container mx-auto px-6 max-w-3xl relative z-10">
-        <div ref={ref} className={`text-center mb-16 scroll-fade ${isVisible ? "visible" : ""}`}>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
-            Perguntas <span className="text-primary">Frequentes</span>
-          </h2>
+        <div className="text-center mb-20">
+          <span className="font-body text-xs uppercase tracking-[0.3em] text-primary/80 mb-6 inline-block">
+            FAQ
+          </span>
+          <AnimatedHeading
+            as="h2"
+            lines={["Perguntas frequentes"]}
+            className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl tracking-tight"
+          />
         </div>
 
-        <div className={`space-y-3 stagger-children ${isVisible ? "visible" : ""}`}>
+        <div ref={ref} className={`space-y-3 stagger-children ${isVisible ? "visible" : ""}`}>
           {faqs.map((faq, i) => (
             <div
               key={i}
@@ -47,12 +49,12 @@ export function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between p-5 text-left interactive"
+                className="w-full flex items-center justify-between p-6 text-left interactive"
               >
-                <span className="font-heading font-semibold text-foreground text-sm md:text-base">{faq.q}</span>
+                <span className="font-heading font-semibold text-foreground text-base md:text-lg">{faq.q}</span>
                 <svg
-                  width="20"
-                  height="20"
+                  width="22"
+                  height="22"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -65,11 +67,13 @@ export function FAQ() {
                 </svg>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === i ? "max-h-60 pb-5" : "max-h-0"
+                className={`grid transition-all duration-500 ease-out ${
+                  openIndex === i ? "grid-rows-[1fr] pb-6" : "grid-rows-[0fr]"
                 }`}
               >
-                <p className="px-5 font-body text-muted-foreground text-sm leading-relaxed">{faq.a}</p>
+                <div className="overflow-hidden">
+                  <p className="px-6 font-body text-muted-foreground text-base leading-relaxed">{faq.a}</p>
+                </div>
               </div>
             </div>
           ))}
