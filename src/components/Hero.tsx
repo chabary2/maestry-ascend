@@ -20,8 +20,8 @@ export function Hero() {
       <div ref={ref} className="container mx-auto px-6 text-center max-w-5xl relative z-10 pt-24">
         <AnimatedHeading
           as="h1"
-          lines={["Estruturamos sua operação."]}
-          className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-10 text-gradient-warm"
+          lines={["Criamos sistemas que estruturam sua operação"]}
+          className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-10 text-white"
         />
 
         <p
