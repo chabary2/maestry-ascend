@@ -9,7 +9,6 @@ export function CTAFinal() {
     <section
       id="cta"
       className="relative py-32 md:py-48 overflow-hidden"
-      style={{ background: "radial-gradient(ellipse 80% 70% at 50% 50%, #8B250040 0%, transparent 70%)" }}
     >
       <div className="blur-orb w-[600px] h-[600px] bg-primary/8 bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3" />
 

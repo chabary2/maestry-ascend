@@ -58,10 +58,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    @apply text-foreground font-body antialiased;
     cursor: default;
-    background: radial-gradient(ellipse at 20% 30%, #7A3300 0%, #3D1A00 35%, #000000 70%);
+    background: radial-gradient(ellipse at 15% 20%, #FF450022 0%, #FF8C0018 25%, #D2691E15 45%, #0a0500 70%, #000000 100%);
     background-attachment: fixed;
+    background-color: #000000;
   }
 
   /* Gradient text for headlines - bright gold with strong glow */
