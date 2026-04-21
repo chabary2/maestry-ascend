@@ -27,8 +27,9 @@ export function CTAFinal() {
           className="group relative inline-flex items-center gap-3 font-heading font-bold text-base px-9 py-4 rounded-xl transition-all duration-300 interactive overflow-hidden"
           style={{
             background: "linear-gradient(135deg, hsl(34 91% 50%) 0%, hsl(22 85% 38%) 100%)",
-            color: "hsl(var(--primary-foreground))",
-            boxShadow: "0 0 0 1px hsl(38 90% 60% / 0.4) inset, 0 10px 30px -10px hsl(34 91% 47% / 0.6), 0 0 60px -20px hsl(22 85% 45% / 0.5)",
+            color: "#ffffff",
+            textShadow: "0 0 12px hsl(48 100% 70% / 0.7), 0 0 24px hsl(38 95% 55% / 0.5)",
+            boxShadow: "0 0 0 1px hsl(48 95% 65% / 0.5) inset, 0 10px 30px -10px hsl(34 91% 47% / 0.7), 0 0 60px -15px hsl(38 95% 55% / 0.6)",
           }}
         >
           <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />

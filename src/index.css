@@ -60,22 +60,23 @@
   body {
     @apply bg-background text-foreground font-body antialiased;
     cursor: default;
-    background-color: hsl(var(--base-black));
+    background-color: #000000;
     background-image:
-      radial-gradient(ellipse 50% 40% at 0% 0%, hsl(22 95% 28% / 0.35) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 50% at 100% 100%, hsl(22 90% 22% / 0.22) 0%, transparent 65%),
-      radial-gradient(ellipse 70% 60% at 50% 120%, hsl(22 85% 18% / 0.15) 0%, transparent 70%);
+      radial-gradient(ellipse 55% 45% at 0% 0%, hsl(28 100% 45% / 0.28) 0%, transparent 60%),
+      radial-gradient(ellipse 45% 35% at 100% 15%, hsl(48 100% 55% / 0.14) 0%, transparent 65%),
+      radial-gradient(ellipse 60% 50% at 100% 100%, hsl(38 95% 50% / 0.20) 0%, transparent 65%),
+      radial-gradient(ellipse 70% 50% at 50% 120%, hsl(22 95% 40% / 0.18) 0%, transparent 70%);
     background-attachment: fixed;
   }
 
-  /* Gradient text for headlines - warm palette */
+  /* Gradient text for headlines - golden warm with glow */
   .text-gradient-warm {
-    background: linear-gradient(135deg, hsl(38 95% 65%) 0%, hsl(34 91% 55%) 35%, hsl(22 85% 45%) 70%, hsl(38 75% 55%) 100%);
+    background: linear-gradient(135deg, hsl(48 95% 75%) 0%, hsl(40 90% 65%) 40%, hsl(34 85% 55%) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    filter: drop-shadow(0 0 25px hsl(34 91% 50% / 0.35)) drop-shadow(0 0 50px hsl(22 85% 40% / 0.25));
+    filter: drop-shadow(0 0 20px hsl(40 90% 55% / 0.35)) drop-shadow(0 0 40px hsl(34 85% 50% / 0.25));
   }
 
   h1, h2, h3, h4, h5, h6 {
