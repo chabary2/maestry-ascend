@@ -16,7 +16,7 @@ export function CTAFinal() {
       <div ref={ref} className={`container mx-auto px-6 text-center relative z-10 max-w-3xl scroll-fade ${isVisible ? "visible" : ""}`}>
         <AnimatedHeading
           as="h2"
-          lines={["Se você tem audiência e conhecimento,", "a estrutura é o que falta."]}
+          lines={["Se você tem constância e conhecimento,", "nossa estrutura é o que falta."]}
           className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl mb-12 glow-orange tracking-tight leading-[1.15]"
         />
 

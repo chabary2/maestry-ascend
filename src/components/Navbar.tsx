@@ -74,7 +74,7 @@ export function Navbar() {
           href="https://tally.so/r/68k4do"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary text-primary-foreground font-heading font-semibold text-sm px-5 py-2 rounded-full hover:brightness-110 transition-all duration-300"
+          className="bg-primary text-white font-heading font-semibold text-sm px-5 py-2 rounded-full hover:brightness-110 transition-all duration-300"
         >
           Fale com a gente
         </a>
