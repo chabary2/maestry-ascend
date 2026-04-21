@@ -21,16 +21,17 @@ export function Hero() {
       <div ref={ref} className="container mx-auto px-6 text-center max-w-5xl relative z-10 pt-24">
         <AnimatedHeading
           as="h1"
-          lines={["Entramos na sua operação.", "Estruturamos o produto, o comercial e o conteúdo."]}
-          className="font-heading font-bold text-4xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight mb-8 glow-orange"
+          lines={["Estruturamos sua operação."]}
+          className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-10 text-gradient-warm"
         />
 
         <p
-          className={`font-body text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-700 ${
+          className={`font-body text-foreground/70 text-base md:text-lg max-w-2xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Trabalhamos com especialistas que têm conhecimento real para ensinar.
+          Construímos o produto, implementamos o comercial e as estratégias de conteúdo.
+          Trabalhamos com especialistas que têm conhecimento para ensinar.
           O produto e o sistema de vendas, a gente constrói junto.
         </p>
 
